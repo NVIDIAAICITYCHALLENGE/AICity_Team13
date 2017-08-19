@@ -1,0 +1,52 @@
+------
+Filename
+1501535763627.pickle
+Prediction Result
+23.96
+------
+Filename
+1501535773927.pickle
+Prediction Result
+18.87
+------
+Filename
+1501535779490.pickle
+Prediction Result
+17.22
+------
+Filename
+1501535785334.pickle
+Prediction Result
+23.55
+------
+Filename
+1501535793368.pickle
+Prediction Result
+31.9
+------
+Filename
+1501535808214.pickle
+Prediction Result
+27.49
+------
+Filename
+1501535814289.pickle
+Prediction Result
+17.02
+------
+Filename
+1501535820724.pickle
+Prediction Result
+14.84
+------
+Filename
+1501535828172.pickle
+Prediction Result
+16.57
+----------- The best config for the traffic lights is: -----------
+
+
+Max score: 31.9
+
+
+File with the traffic lights configuration: 1501535793368.xml

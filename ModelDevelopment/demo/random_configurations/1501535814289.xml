@@ -1,0 +1,191 @@
+<data>
+  <score allAvgSpeed="3.87615136926" ambAvgSpeed="5.71359493671" ambTime="395.0" avgAnnoyance="0.0" routeLength="2221.65905272" value="0.165953916991" />
+  <tArea avgSpeed="0.0" density="0.0" x="1500" y="0" />
+  <tArea avgSpeed="5.59876971609" density="3.52222222222" x="1500" y="500" />
+  <tArea avgSpeed="14.3627906977" density="1.67222222222" x="1500" y="1000" />
+  <tArea avgSpeed="2.86655172414" density="4.51111111111" x="1500" y="1500" />
+  <tArea avgSpeed="0.0" density="0.0" x="1500" y="2000" />
+  <tArea avgSpeed="0.0" density="0.0" x="1500" y="2500" />
+  <tArea avgSpeed="0.0" density="0.0" x="1500" y="3000" />
+  <tArea avgSpeed="0.0" density="0.0" x="1500" y="3500" />
+  <tArea avgSpeed="0.0" density="0.0" x="1500" y="4000" />
+  <tArea avgSpeed="0.0" density="0.0" x="1500" y="4500" />
+  <tArea avgSpeed="0.0" density="0.0" x="1500" y="5000" />
+  <tArea avgSpeed="0.0" density="0.0" x="2000" y="0" />
+  <tArea avgSpeed="0.0" density="0.0" x="2000" y="500" />
+  <tArea avgSpeed="0.0" density="0.0" x="2000" y="1000" />
+  <tArea avgSpeed="0.0" density="0.0" x="2000" y="1500" />
+  <tArea avgSpeed="0.0" density="0.0" x="2000" y="2000" />
+  <tArea avgSpeed="0.0" density="0.0" x="2000" y="2500" />
+  <tArea avgSpeed="0.0" density="0.0" x="2000" y="3000" />
+  <tArea avgSpeed="0.0" density="0.0" x="2000" y="3500" />
+  <tArea avgSpeed="0.0" density="0.0" x="2000" y="4000" />
+  <tArea avgSpeed="0.0" density="0.0" x="2000" y="4500" />
+  <tArea avgSpeed="0.0" density="0.0" x="2000" y="5000" />
+  <tArea avgSpeed="0.0" density="0.0" x="2500" y="0" />
+  <tArea avgSpeed="0.0" density="0.0" x="2500" y="500" />
+  <tArea avgSpeed="0.0" density="0.0" x="2500" y="1000" />
+  <tArea avgSpeed="0.0" density="0.0" x="2500" y="1500" />
+  <tArea avgSpeed="0.0" density="0.0" x="2500" y="2000" />
+  <tArea avgSpeed="0.0" density="0.0" x="2500" y="2500" />
+  <tArea avgSpeed="0.0" density="0.0" x="2500" y="3000" />
+  <tArea avgSpeed="0.0" density="0.0" x="2500" y="3500" />
+  <tArea avgSpeed="0.0" density="0.0" x="2500" y="4000" />
+  <tArea avgSpeed="0.0" density="0.0" x="2500" y="4500" />
+  <tArea avgSpeed="0.0" density="0.0" x="2500" y="5000" />
+  <tArea avgSpeed="0.0" density="0.0" x="3000" y="0" />
+  <tArea avgSpeed="0.0" density="0.0" x="3000" y="500" />
+  <tArea avgSpeed="0.0" density="0.0" x="3000" y="1000" />
+  <tArea avgSpeed="0.0" density="0.0" x="3000" y="1500" />
+  <tArea avgSpeed="0.0" density="0.0" x="3000" y="2000" />
+  <tArea avgSpeed="0.0" density="0.0" x="3000" y="2500" />
+  <tArea avgSpeed="0.0" density="0.0" x="3000" y="3000" />
+  <tArea avgSpeed="0.0" density="0.0" x="3000" y="3500" />
+  <tArea avgSpeed="0.0" density="0.0" x="3000" y="4000" />
+  <tArea avgSpeed="0.0" density="0.0" x="3000" y="4500" />
+  <tArea avgSpeed="0.0" density="0.0" x="3000" y="5000" />
+  <tArea avgSpeed="0.0" density="0.0" x="3500" y="0" />
+  <tArea avgSpeed="0.0" density="0.0" x="3500" y="500" />
+  <tArea avgSpeed="0.0" density="0.0" x="3500" y="1000" />
+  <tArea avgSpeed="0.0" density="0.0" x="3500" y="1500" />
+  <tArea avgSpeed="0.0" density="0.0" x="3500" y="2000" />
+  <tArea avgSpeed="0.0" density="0.0" x="3500" y="2500" />
+  <tArea avgSpeed="0.0" density="0.0" x="3500" y="3000" />
+  <tArea avgSpeed="0.0" density="0.0" x="3500" y="3500" />
+  <tArea avgSpeed="0.0" density="0.0" x="3500" y="4000" />
+  <tArea avgSpeed="0.0" density="0.0" x="3500" y="4500" />
+  <tArea avgSpeed="0.0" density="0.0" x="3500" y="5000" />
+  <tArea avgSpeed="0.0" density="0.0" x="4000" y="0" />
+  <tArea avgSpeed="0.0" density="0.0" x="4000" y="500" />
+  <tArea avgSpeed="0.0" density="0.0" x="4000" y="1000" />
+  <tArea avgSpeed="0.0" density="0.0" x="4000" y="1500" />
+  <tArea avgSpeed="0.0" density="0.0" x="4000" y="2000" />
+  <tArea avgSpeed="0.0" density="0.0" x="4000" y="2500" />
+  <tArea avgSpeed="0.0" density="0.0" x="4000" y="3000" />
+  <tArea avgSpeed="0.0" density="0.0" x="4000" y="3500" />
+  <tArea avgSpeed="0.0" density="0.0" x="4000" y="4000" />
+  <tArea avgSpeed="0.0" density="0.0" x="4000" y="4500" />
+  <tArea avgSpeed="0.0" density="0.0" x="4000" y="5000" />
+  <tArea avgSpeed="0.0" density="0.0" x="4500" y="0" />
+  <tArea avgSpeed="0.0" density="0.0" x="4500" y="500" />
+  <tArea avgSpeed="0.0" density="0.0" x="4500" y="1000" />
+  <tArea avgSpeed="0.0" density="0.0" x="4500" y="1500" />
+  <tArea avgSpeed="0.0" density="0.0" x="4500" y="2000" />
+  <tArea avgSpeed="0.0" density="0.0" x="4500" y="2500" />
+  <tArea avgSpeed="0.0" density="0.0" x="4500" y="3000" />
+  <tArea avgSpeed="0.0" density="0.0" x="4500" y="3500" />
+  <tArea avgSpeed="0.0" density="0.0" x="4500" y="4000" />
+  <tArea avgSpeed="0.0" density="0.0" x="4500" y="4500" />
+  <tArea avgSpeed="0.0" density="0.0" x="4500" y="5000" />
+  <tArea avgSpeed="0.0" density="0.0" x="5000" y="0" />
+  <tArea avgSpeed="0.0" density="0.0" x="5000" y="500" />
+  <tArea avgSpeed="0.0" density="0.0" x="5000" y="1000" />
+  <tArea avgSpeed="0.0" density="0.0" x="5000" y="1500" />
+  <tArea avgSpeed="0.0" density="0.0" x="5000" y="2000" />
+  <tArea avgSpeed="0.0" density="0.0" x="5000" y="2500" />
+  <tArea avgSpeed="0.0" density="0.0" x="5000" y="3000" />
+  <tArea avgSpeed="0.0" density="0.0" x="5000" y="3500" />
+  <tArea avgSpeed="0.0" density="0.0" x="5000" y="4000" />
+  <tArea avgSpeed="0.0" density="0.0" x="5000" y="4500" />
+  <tArea avgSpeed="0.0" density="0.0" x="5000" y="5000" />
+  <tlLogic id="65528462" offset="0" programID="0" type="static">
+    <phase duration="51" state="rrrrGGGggrGGGgg" />
+    <phase duration="5" state="rrrryyyggryyygg" />
+    <phase duration="59" state="rrrrrrrGGrrrrGG" />
+    <phase duration="5" state="rrrrrrryyrrrryy" />
+    <phase duration="52" state="GGggGrrrrGrrrrr" />
+    <phase duration="5" state="yyggyrrrryrrrrr" />
+    <phase duration="39" state="rrGGrrrrrrrrrrr" />
+    <phase duration="5" state="rryyrrrrrrrrrrr" />
+  </tlLogic>
+  <tlLogic id="65543290" offset="0" programID="0" type="static">
+    <phase duration="13" state="rrrrGGGggrrrrGGGgg" />
+    <phase duration="5" state="rrrryyyggrrrryyygg" />
+    <phase duration="54" state="rrrrrrrGGrrrrrrrGG" />
+    <phase duration="5" state="rrrrrrryyrrrrrrryy" />
+    <phase duration="25" state="GGggrrrrrGGggrrrrr" />
+    <phase duration="5" state="yyggrrrrryyggrrrrr" />
+    <phase duration="13" state="rrGGrrrrrrrGGrrrrr" />
+    <phase duration="5" state="rryyrrrrrrryyrrrrr" />
+  </tlLogic>
+  <tlLogic id="65572998" offset="0" programID="0" type="static">
+    <phase duration="51" state="GGGggrrrrrrGGGggrrrrrr" />
+    <phase duration="9" state="yyyggrrrrrryyyggrrrrrr" />
+    <phase duration="34" state="rrrGGrrrrrrrrrGGrrrrrr" />
+    <phase duration="9" state="rrryyrrrrrrrrryyrrrrrr" />
+    <phase duration="6" state="rrrrrGGGGggrrrrrGGGGgg" />
+    <phase duration="9" state="rrrrryyyyggrrrrryyyygg" />
+    <phase duration="43" state="rrrrrrrrrGGrrrrrrrrrGG" />
+    <phase duration="9" state="rrrrrrrrryyrrrrrrrrryy" />
+  </tlLogic>
+  <tlLogic id="65596348" offset="0" programID="0" type="static">
+    <phase duration="17" state="rrrrrGGGggrrrrrGGGg" />
+    <phase duration="5" state="rrrrryyyggrrrrryyyg" />
+    <phase duration="45" state="rrrrrrrrGGrrrrrrrrG" />
+    <phase duration="5" state="rrrrrrrryyrrrrrrrry" />
+    <phase duration="39" state="GGGggrrrrrGGGggrrrr" />
+    <phase duration="5" state="yyyggrrrrryyyggrrrr" />
+    <phase duration="12" state="rrrGGrrrrrrrrGGrrrr" />
+    <phase duration="5" state="rrryyrrrrrrrryyrrrr" />
+  </tlLogic>
+  <tlLogic id="65621686" offset="0" programID="0" type="static">
+    <phase duration="6" state="rrrrGGGGggrrrrGGGGgg" />
+    <phase duration="5" state="rrrryyyyggrrrryyyygg" />
+    <phase duration="43" state="rrrrrrrrGGrrrrrrrrGG" />
+    <phase duration="5" state="rrrrrrrryyrrrrrrrryy" />
+    <phase duration="8" state="GGggrrrrrrGGggrrrrrr" />
+    <phase duration="5" state="yyggrrrrrryyggrrrrrr" />
+    <phase duration="21" state="rrGGrrrrrrrrGGrrrrrr" />
+    <phase duration="5" state="rryyrrrrrrrryyrrrrrr" />
+  </tlLogic>
+  <tlLogic id="cluster_1106542197_668462000" offset="0" programID="0" type="static">
+    <phase duration="7" state="GGGggrrrrGGGggrrrr" />
+    <phase duration="9" state="yyyggrrrryyyggrrrr" />
+    <phase duration="4" state="rrrGGrrrrrrrGGrrrr" />
+    <phase duration="9" state="rrryyrrrrrrryyrrrr" />
+    <phase duration="25" state="rrrrrGGggrrrrrGGgg" />
+    <phase duration="9" state="rrrrryyggrrrrryygg" />
+    <phase duration="11" state="rrrrrrrGGrrrrrrrGG" />
+    <phase duration="9" state="rrrrrrryyrrrrrrryy" />
+  </tlLogic>
+  <tlLogic id="cluster_1113311811_286891477_33717352_65445714" offset="0" programID="0" type="static">
+    <phase duration="42" state="GGGGGggrrrrrGGGGGggrrrrr" />
+    <phase duration="6" state="yyyyyggrrrrryyyyyggrrrrr" />
+    <phase duration="53" state="rrrrrGGrrrrrrrrrrGGrrrrr" />
+    <phase duration="6" state="rrrrryyrrrrrrrrrryyrrrrr" />
+    <phase duration="29" state="rrrrrrrGGGggrrrrrrrGGGgg" />
+    <phase duration="6" state="rrrrrrryyyggrrrrrrryyygg" />
+    <phase duration="7" state="rrrrrrrrrrGGrrrrrrrrrrGG" />
+    <phase duration="6" state="rrrrrrrrrryyrrrrrrrrrryy" />
+  </tlLogic>
+  <tlLogic id="cluster_288059870_65445718_668462014_668462022" offset="0" programID="0" type="static">
+    <phase duration="4" state="rrrrrGGGGGggrrrrrGGGGGgg" />
+    <phase duration="9" state="rrrrryyyyyggrrrrryyyyygg" />
+    <phase duration="58" state="rrrrrrrrrrGGrrrrrrrrrrGG" />
+    <phase duration="9" state="rrrrrrrrrryyrrrrrrrrrryy" />
+    <phase duration="19" state="GGGggrrrrrrrGGGggrrrrrrr" />
+    <phase duration="9" state="yyyggrrrrrrryyyggrrrrrrr" />
+    <phase duration="60" state="rrrGGrrrrrrrrrrGGrrrrrrr" />
+    <phase duration="9" state="rrryyrrrrrrrrrryyrrrrrrr" />
+  </tlLogic>
+  <tlLogic id="joinedS_0" offset="0" programID="0" type="static">
+    <phase duration="19" state="ggrrrGGGGGGrrrGGGGGGggg" />
+    <phase duration="6" state="ggrrryyyyyyrrryyyyyyggg" />
+    <phase duration="4" state="GGrrrrrrrrrrrrrrrrrrGGG" />
+    <phase duration="6" state="yyrrrrrrrrrrrrrrrrrryyy" />
+    <phase duration="16" state="GgGGgrrrrrrGGgrrrrrrGgg" />
+    <phase duration="6" state="ygyygrrrrrryygrrrrrrygg" />
+    <phase duration="58" state="GGrrgrrrrrrrrGrrrrrrrGG" />
+    <phase duration="6" state="yyrryrrrrrrrryrrrrrrryy" />
+  </tlLogic>
+  <tlLogic id="joinedS_1" offset="0" programID="0" type="static">
+    <phase duration="29" state="GGgGGgGGgGGrrGGGggggggggGGGggrrrr" />
+    <phase duration="9" state="yygyygyygyyrryyyggggggggyyyggrrrr" />
+    <phase duration="57" state="rrgGGGGGGrrrrGGGggggggggGGGggrrrr" />
+    <phase duration="9" state="rryyyyyyyrrrryyyyyyyyyyyyyyyyrrrr" />
+    <phase duration="22" state="rrrGGGGGGrrGgGgGggggggggGGGgggggg" />
+    <phase duration="9" state="rrryyyyyyrrygygyggggggggyyygggggg" />
+    <phase duration="19" state="rrrGGGGGGrrrgGGGggggggggGGGgggggg" />
+    <phase duration="9" state="rrryyyyyyrrryyyyyyyyyyyyyyyyyyyyy" />
+  </tlLogic>
+</data>
