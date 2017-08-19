@@ -8,28 +8,28 @@ import math
 import traci
 import gzip
 
-KEEP_OUTPUTS = True # se False, apaga arquivo de simulacao ao terminar
+KEEP_OUTPUTS = True # if False, simulation output files are erased after being processed
 
-# parametros dos geradores aleatorios
-VEHICLE_RATE = 1/1.4 # 1.4 carro por segundo
-MINTLTIME = 4  # menor intervalo do semaforo
-MAXTLTIME = 60 # maior intervalo do semaforo
+# Random generator parameters
+VEHICLE_RATE = 1/1.4 # 1.4 cars per second
+MINTLTIME = 4  # seconds, lowest traffic light interval
+MAXTLTIME = 60 # seconds, highest traffic light interval
 GENERATE_NEW_CARS = True
 GENERATE_NEW_TRAFFIC_LIGHTS = True
 
-# parametros da simulacao
+# Simulation parameters
 STEP_LENGTH = "1"
-AMBULANCE_ENTRY_TIME = 100 # instante em que ambulancia entra
+AMBULANCE_ENTRY_TIME = 100
 MAX_SIMULATION_STEPS = 3700
-SHOW_INTERFACE = False # mostrar GUI
-SHOW_WARNINGS = False # se for False, esconde warnings do SUMO (pode aumentar desempenho)
+SHOW_INTERFACE = False
+SHOW_WARNINGS = False
 AMBULANCE_NAME = "Amb"
 PROPERTIES = "%.1fcps_%sstep_%s" % (1/VEHICLE_RATE, STEP_LENGTH, str(int(time.time() * 1000)))
 OUTPUT_DIRECTORY = "."
 OUTPUT_FILENAME = "out_%s.xml" % (PROPERTIES)
 OUTPUT_FILE = "%s/%s" % (OUTPUT_DIRECTORY, OUTPUT_FILENAME) # arquivo de saida
 
-# parametros para geracao dos resultados
+# Result generation parameters
 XINIT = 0
 XEND = 2800
 YINIT = 0
@@ -38,7 +38,7 @@ AREASTEP = 10
 PICKLE_DIRECTORY = "."
 RESULT_DIRECTORY = "."
     
-##Checa se o path esta correto 
+# Check for SUMO in environment PATH 
 if 'SUMO_HOME' in os.environ:
     tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
     sys.path.append(tools)
@@ -51,14 +51,14 @@ partial_time = start_time
 print('----------------------------------------------------');
 print('-> Starting simulation %s' % PROPERTIES);
 
-# Cria randomTrips
+# Generate random vehicle trips
 if GENERATE_NEW_CARS:
     print('\n-> Randomizing vehicle trips...')
     os.system('randomTrips.py -n osm.net.xml -e %s -p %s' % (str(MAX_SIMULATION_STEPS), str(VEHICLE_RATE)))
     os.system('randomTrips.py -n osm.net.xml -r osm.passenger.rou.xml -e %s -p %s' % (str(MAX_SIMULATION_STEPS), str(VEHICLE_RATE)))
     partial_time = time.time()
 
-# Gera tempos aleatorios para os semaforos
+# Generate random traffic light timings
 if GENERATE_NEW_TRAFFIC_LIGHTS:
     print('\n\n-> Randomizing traffic light configurations...')
     netTree = ET.parse('osm.net.xml') # le arquivo atual
@@ -69,7 +69,7 @@ if GENERATE_NEW_TRAFFIC_LIGHTS:
     netTree.write('osm.net.xml') # reescreve arquivo da rede
     partial_time = time.time()
 
-## Executa simulacao com SUMO e gera output
+## Execute SUMO simlation and generate output
 print('\n\n-> Simulating traffic...')
 sumoCmd = ["sumo" + ("-gui" if SHOW_INTERFACE else ""), "-c", "osm.sumocfg", "--fcd-output", OUTPUT_FILE, "--step-length", STEP_LENGTH]
 if SHOW_WARNINGS == False:
@@ -78,14 +78,13 @@ traci.start(sumoCmd)
 
 for step in xrange(MAX_SIMULATION_STEPS):
     traci.simulationStep()
-    if step == AMBULANCE_ENTRY_TIME: # ambulancia entra no instante configurado
-        traci.route.add("trip", ["416151865", "28596086#1"]) ##do hospital ate a NVIDIA
-        traci.vehicle.add(AMBULANCE_NAME, "trip", typeID="reroutingType") ##faz rerotear essa trip
+    if step == AMBULANCE_ENTRY_TIME:
+        traci.route.add("trip", ["416151865", "28596086#1"])
+        traci.vehicle.add(AMBULANCE_NAME, "trip", typeID="reroutingType")
         if SHOW_INTERFACE:
-            traci.vehicle.setColor(AMBULANCE_NAME, (255,0,0,0)) ##Muda cor pra vermelha
+            traci.vehicle.setColor(AMBULANCE_NAME, (255,0,0,0))
             traci.gui.trackVehicle('View #0', AMBULANCE_NAME)
             traci.gui.setZoom('View #0', 1000.0)
-    # simulacao termina quando ambulancia chega no hospital
     if step > AMBULANCE_ENTRY_TIME and AMBULANCE_NAME in traci.simulation.getArrivedIDList():
         print("\n--- Ambulance has arrived ---\n")
         break
@@ -95,8 +94,6 @@ traci.close()
 print('\n>> Simulation duration: %.2f s' % (time.time() - partial_time))
 partial_time = time.time()
 
-
-## funcao indent
 def indent(elem, level=0):
     i = "\n" + level*"  "
     if len(elem):
@@ -135,10 +132,9 @@ pins_array = np.asarray(x_list)
 
 # Prepare result xml
 resultRoot = ET.Element("data")
-##Cria score
+## Create score
 score = ET.SubElement(resultRoot, "score", ambTime="0.0", ambAvgSpeed="0.0", routeLength="0.0", allAvgSpeed="0.0", value="0.0")
 
-#Do arquivo de output vai criar um result que tem os vetores de entrada e o score da AI
 totalTime = 0
 vehicleTimeAmbCount = 0
 xAmb = 0
@@ -175,23 +171,22 @@ for event, elem in ET.iterparse(OUTPUT_FILE):
                     ambAvgSpeed += current_speed
                     xAmb = float(vehicle.get('x'))
                     yAmb = float(vehicle.get('y'))
-                    if xAmbPrev > 0 : score.set('routeLength', str(math.sqrt(math.pow(xAmb-xAmbPrev,2)+math.pow(yAmb-yAmbPrev,2))+float(score.get('routeLength')))) ##Pega distancia percorrida da ambulancia
+                    if xAmbPrev > 0 : score.set('routeLength', str(math.sqrt(math.pow(xAmb-xAmbPrev,2)+math.pow(yAmb-yAmbPrev,2))+float(score.get('routeLength')))) 
                     xAmbPrev = xAmb
                     yAmbPrev = yAmb
         elem.clear()
 score.set('ambTime', str(now - AMBULANCE_ENTRY_TIME))
-score.set('ambAvgSpeed', str(ambAvgSpeed/(now - AMBULANCE_ENTRY_TIME))) ##corrige velocidade media da ambulancia
-score.set('allAvgSpeed', str(allAvgSpeed / vehicleTimeAmbCount)) ##corrige velocidade media da ambulancia
+score.set('ambAvgSpeed', str(ambAvgSpeed/(now - AMBULANCE_ENTRY_TIME)))
+score.set('allAvgSpeed', str(allAvgSpeed / vehicleTimeAmbCount))
 score.set('value', str(float(score.get('ambAvgSpeed'))*0.6/30 + float(score.get('allAvgSpeed'))*0.4/30))
 
-#copia tlLogic
-netTree = ET.parse('osm.net.xml') # le arquivo atual
+netTree = ET.parse('osm.net.xml')
 netRoot = netTree.getroot()
 for tlLogic in netRoot.iter('tlLogic'):
   resultRoot.append(tlLogic)
     
 resultTree = ET.ElementTree(resultRoot)
-indent(resultRoot) ## deixa texto do xml bonitinho
+indent(resultRoot)
 resultTree.write("%s/res_%s.xml" % (RESULT_DIRECTORY, PROPERTIES))
 
 average_speed_array = picture_array / now
